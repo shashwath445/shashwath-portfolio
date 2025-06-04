@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashwath BK - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          animation: {
+            fadeIn: 'fadeIn 2s ease-in forwards',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans scroll-smooth">
+
+  <!-- Navigation -->
+  <header class="fixed w-full z-10 bg-gray-900 bg-opacity-80 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-400">Shashwath BK</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="#home" class="hover:text-blue-400">Home</a>
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#skills" class="hover:text-blue-400">Skills</a>
+        <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#resume" class="hover:text-blue-400">Resume</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-b from-gray-900 to-gray-950 animate-fadeIn">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-400">Shashwath BK</span></h2>
+      <p class="text-lg md:text-xl text-gray-400 max-w-xl mx-auto">An aspiring engineer from Nitte Meenakshi Institute of Technology, passionate about electronics, embedded systems, and innovative tech solutions.</p>
+      <a href="#contact" class="mt-6 inline-block bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-900 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <img src="shashwath-photo.jpg" alt="Shashwath Photo" class="rounded-2xl shadow-lg w-full max-w-xs mx-auto">
+      <div>
+        <h3 class="text-3xl font-bold mb-4 text-blue-400">About Me</h3>
+        <p class="text-gray-300 mb-4">
+          I'm currently pursuing my engineering degree in Electrical and Electronics at NMIT. I love building projects in embedded systems, IoT, and sustainable tech. I've also led workshops, won awards, and volunteered for multiple campus activities.
+        </p>
+        <p class="text-gray-400">My goal is to contribute to impactful innovations that merge technology and sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-6 bg-gray-950">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10 text-blue-400">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm text-gray-300">
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">Embedded C</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">Python</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">MATLAB / Simulink</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">IoT & ESP32</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">Circuit Design</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">PCB Layout</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">Team Leadership</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">Event Coordination</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">PLC</div>
+        <div class="bg-gray-800 p-4 rounded-xl shadow hover:scale-105 transition">3D Printing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10 text-blue-400">Projects</h3>
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold text-white mb-2">Self-Balancing Electric Unicycle</h4>
+          <p class="text-gray-400 text-sm">Designed a 3.5kW unicycle with real-time balance control using sensors, motor controllers, and boost converters.</p>
+        </div>
+        <div class="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold text-white mb-2">Smart Campus App</h4>
+          <p class="text-gray-400 text-sm">Created an app to connect students with nearby small stores, showing real-time product availability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="py-20 px-6 bg-gray-950 text-center">
+    <h3 class="text-3xl font-bold text-blue-400 mb-6">Resume</h3>
+    <p class="text-gray-400 mb-6">Download my resume to learn more about my background, education, and achievements.</p>
+    <a href="resume.pdf" download class="bg-blue-500 px-6 py-2 rounded-full text-white hover:bg-blue-600 transition">Download Resume (PDF)</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-950 text-center">
+    <h3 class="text-3xl font-bold text-blue-400 mb-6">Contact Me</h3>
+    <p class="text-gray-400 mb-6">Feel free to reach out for collaborations, project ideas, or just to say hi!</p>
+    <div class="space-y-4">
+      <p>Email: <a href="mailto:shashwathbk445@gmail.com" class="text-blue-400 hover:underline">shashwathbk445@gmail.com</a></p>
+      <p>Phone: <a href="tel:+917619442005" class="text-blue-400 hover:underline">+91 76194 42005</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-500 text-sm text-center py-6">
+    &copy; 2025 Shashwath BK.
+  </footer>
+
+</body>
+</html>
